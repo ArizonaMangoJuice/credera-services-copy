@@ -211,7 +211,7 @@ main {
 
 .page-bottom-paper {
   position: absolute;
-  bottom: -15px;
+  bottom: -28px;
   right: 0;
   left: 0;
 }
@@ -251,6 +251,22 @@ main {
 .info-bottom-link {
   color: var(--highlight);
   font-weight: bolder;
+  position: relative;
+}
+
+.info-bottom-link::after{
+  content: "\2794";
+  display: inline-block;
+  color: var(--highlight);
+  transform: translateX(10px) translateY(1.5px);
+  font-weight: bolder;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+.info-bottom-link:hover::after{
+  transition: 0.2s;
+  transform: translateX(15px) translateY(1.5px);
 }
 
 .info-1-right-side {
